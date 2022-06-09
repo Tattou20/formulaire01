@@ -17,8 +17,7 @@
         div{
             background: url(../img/bg1.jpg);
             width: 800px;
-            height: 535px;
-            padding : 20px;
+    
         }
         table{
             border-collapse : collapse;
@@ -97,6 +96,10 @@
                 <form action="detail.php" method="POST">
                     <input type="hidden" value="<?php echo $res["id"] ; ?>" />
                     <input type="submit" value="Détail" />
+                </form> 
+                <form action="delete.php" method="POST">
+                    <input type="hidden" name="id" value="<?php echo $res["id"] ; ?>" />
+                    <input type="submit" value="Supprimer" />
                 </form>              
             </td>
 
