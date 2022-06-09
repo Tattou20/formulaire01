@@ -7,17 +7,27 @@
     <title>Utilisateurs</title>
     <style>
         body{
-        width: 50%;
-        margin: auto;
+            width: 50%;
+            font-family: arial;
+            margin: 5px auto;
+            padding: 20px;
+            color: black ; 
+            background: rgb(201, 219, 228);
+         }
+        div{
+            background: url(../img/bg1.jpg);
+            width: 800px;
+            height: 535px;
+            padding : 20px;
         }
-
         table{
             border-collapse : collapse;
-            margin : 25px 0;
+            margin : 50px;
             padding : 5px;
             font-size : 0.9em;
             font-family : sans-serif;
             box-shadow : 0 0 20px rgba(0,0,0,0.15);
+            background : #ffffff;
         }
         td,th{
             padding : 10px;
@@ -30,7 +40,7 @@
             border-bottom : 1px solid #dddddd;
         }
         thead tr, tfoot tr{
-            background-color : #009879;
+            background-color : black;
             color : #ffffff;
             text-align : center;
         }
@@ -42,10 +52,10 @@
             background-color : #f3f3f3;
         }
         input[type="submit"]{
-            background-color : #4caf50;
+            background-color : aliceblue;
             border : none;
             border-radius : 3px;
-            color : white;
+            color : black;
             padding : 6px;
             text-align : center;
             font-weight : bold;
@@ -54,6 +64,7 @@
     </style>
 </head>
 <body>
+    <div>
     <h1>Liste des utilisateurs</h1>
     <table>
         <thead>
@@ -86,7 +97,7 @@
                 <form action="detail.php" method="POST">
                     <input type="hidden" value="<?php echo $res["id"] ; ?>" />
                     <input type="submit" value="Détail" />
-                </form>
+                </form>              
             </td>
 
         </tr>
@@ -102,5 +113,9 @@
             </tr>
         </tfoot>
     </table>
+    <form  action="../index.html" method="POST">
+                    <input type="submit" value="Menu" />
+                </form>
+    </div>
 </body>
 </html>
