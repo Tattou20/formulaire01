@@ -13,14 +13,10 @@ body{
 }
 div{
     background: url(../img/bg1.jpg);
-    width: 800px;
-    height: 535px;
 }
 fieldset{
     border-radius: 8px;
     margin: 50px;
-    width: 400px;
-    height: 400px;
 }
 legend{
     font-size: 1.4em;
@@ -35,7 +31,7 @@ input[type="text"], input[type="number"], input[type="email"]{
 }
 input[type="submit"]{
     position: relative;
-    left: 10%;
+    left: 20%;
     padding: 10px;
     font-size: 18px;
     border: 1px solid rgb(221, 174, 211);
