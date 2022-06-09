@@ -13,12 +13,14 @@ body{
 }
 div{
     background: url(../img/bg1.jpg);
-    max-width: 800px;
-    max-height: 535px;
+    width: 800px;
+    height: 535px;
 }
 fieldset{
     border-radius: 8px;
     margin: 50px;
+    width: 400px;
+    height: 400px;
 }
 legend{
     font-size: 1.4em;
@@ -33,12 +35,13 @@ input[type="text"], input[type="number"], input[type="email"]{
 }
 input[type="submit"]{
     position: relative;
-    padding: 20px;
+    left: 10%;
+    padding: 10px;
     font-size: 18px;
     border: 1px solid rgb(221, 174, 211);
-    border-radius: 2px;
-    margin: 10px;
-    width: 100%;
+    border-radius: 5px;
+    margin: 50px;
+    width: 50%;
     font-size: 18px;
     font-style: bold;
     color: black;
@@ -47,16 +50,18 @@ ul {
     list-style-type: none;
     padding: 20px;
     overflow: hidden;
-    margin: 10px;
-    background-color: aliceblue;
+    background-color: black;
 }
 li {
     display: inline;
-    padding: 2px;
+    padding: 10px;
     margin: 10px;
+    border-radius: 5px;
+   
 }
 li a {
-    color: black;
     padding: 2px;
     margin: 10px;
+    text-decoration-line: none;
+    color: white;
 }
